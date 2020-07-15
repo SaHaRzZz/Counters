@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlClass">
+   <children>
+      <Pane prefHeight="95.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="70.0" prefWidth="150.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="שמאל" textAlignment="CENTER" underline="true" wrappingWidth="50.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="l7" fill="#ff0202" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                        <Text fx:id="l4" fill="#ff0202" layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                        <Text fx:id="l1" fill="#ff0202" layoutX="10.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ישר" textAlignment="CENTER" underline="true" wrappingWidth="50.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="m8" fill="#2b03ff" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                        <Text fx:id="m5" fill="#2b03ff" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                        <Text fx:id="m2" fill="#2b03ff" layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ימין" textAlignment="CENTER" underline="true" wrappingWidth="50.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="r9" fill="#00a429" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                        <Text fx:id="r6" fill="#00a429" layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                        <Text fx:id="r3" fill="#00a429" layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button layoutX="176.0" layoutY="69.0" mnemonicParsing="false" onAction="#minus" onKeyPressed="#minusPress" text="-" />
+            <Button layoutX="66.0" layoutY="69.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="25.0" prefWidth="84.0" text="שמור" />
+            <MenuButton fx:id="menu" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="שעה" textOverrun="WORD_ELLIPSIS">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#h1" text="06:00" />
+                <MenuItem mnemonicParsing="false" onAction="#h2" text="06:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h3" text="06:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h4" text="06:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h5" text="07:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h6" text="07:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h7" text="07:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h8" text="07:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h9" text="08:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h10" text="08:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h11" text="08:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h12" text="08:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h13" text="09:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h14" text="09:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h15" text="09:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h16" text="09:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h17" text="10:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h18" text="10:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h19" text="10:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h20" text="10:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h21" text="11:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h22" text="11:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h23" text="11:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h24" text="11:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h25" text="12:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h26" text="12:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h27" text="12:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h28" text="12:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h29" text="13:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h30" text="13:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h31" text="13:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h32" text="13:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h33" text="14:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h34" text="14:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h35" text="14:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h36" text="14:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h37" text="15:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h38" text="15:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h39" text="15:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h40" text="15:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h41" text="16:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h42" text="16:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h43" text="16:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h44" text="16:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h45" text="17:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h46" text="17:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h47" text="17:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h48" text="17:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h49" text="18:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h50" text="18:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h51" text="18:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h52" text="18:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h53" text="19:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h54" text="19:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h55" text="19:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h56" text="19:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h57" text="20:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h58" text="20:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h59" text="20:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h60" text="20:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h61" text="21:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h62" text="21:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h63" text="21:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h64" text="21:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h65" text="22:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h66" text="22:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h67" text="22:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h68" text="22:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h69" text="23:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h70" text="23:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h71" text="23:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h72" text="23:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h73" text="00:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h74" text="00:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h75" text="00:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h76" text="00:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h77" text="01:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h78" text="01:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h79" text="01:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h80" text="01:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h81" text="02:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h82" text="02:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h83" text="02:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h84" text="02:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h85" text="03:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h86" text="03:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h87" text="03:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h88" text="03:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h89" text="04:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h90" text="04:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h91" text="04:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h92" text="04:45" />
+                  <MenuItem mnemonicParsing="false" onAction="#h93" text="05:00" />
+                  <MenuItem mnemonicParsing="false" onAction="#h94" text="05:15" />
+                  <MenuItem mnemonicParsing="false" onAction="#h95" text="05:30" />
+                  <MenuItem mnemonicParsing="false" onAction="#h96" text="05:45" />
+              </items>
+            </MenuButton>
+            <VBox layoutX="147.0" layoutY="14.0" prefHeight="53.0" prefWidth="50.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="משאית" />
+                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="אוטובוס" />
+                  <Text layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="פרטי" />
+               </children>
+            </VBox>
+            <Button layoutX="150.0" layoutY="69.0" mnemonicParsing="false" onAction="#plus" onKeyPressed="#plusPress" text="+" />
+            <CheckBox fx:id="emptyCheckbox" layoutX="144.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="בוצע" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
